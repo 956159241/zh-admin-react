@@ -1,15 +1,19 @@
 import React from "react";
 import "./App.scss";
+// import { HashRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import { ConfigProvider } from 'antd'
+import zhCN from 'antd/es/locale/zh_CN'
+import Router from './router'
 
 function App() {
   return (
-    <div className="App">
-      <div>Hello World~</div>
-      <div className="test">
-        TEST SCSS
-        <div className="test1">TEST SCSS111</div>
-      </div>
-    </div>
+    <ConfigProvider locale={zhCN}>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+  </ConfigProvider>
   );
 }
 
