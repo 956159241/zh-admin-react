@@ -3,7 +3,8 @@
   "author": "张中华 <956159241@qq.com>",
   "scripts": {
     "build": "max build",
-    "dev": "max dev",
+    "dev": "max dev", 
+    "dev:vite": "max dev --vite", 
     "format": "prettier --cache --write .",
     "postinstall": "max setup",
     "prepare": "husky install",
